@@ -181,7 +181,7 @@ function App() {
                             { 
                                 (lotteryWinners && lotteryWinners.length > 0) && lotteryWinners.map((win)=>{
                                     
-                                     if(win.id != lotteryId) {return   <div key={ win.id}> <p>#Winner {lotteryId} </p>           
+                                     if(win.id != lotteryId) {return   <div key={ win.id}> <p>#Winners </p>           
                                      <a href = {`https://etherscan.io/${win.address}`} target="_blank" rel="noreferrer">{win.address}</a> </div>
                                      }
                                    
@@ -211,7 +211,7 @@ function App() {
            </div>
       </div>
 
-      <footer className="bg-light text-center text-lg-start">
+      <footer className=" mt-5 bg-light text-center text-lg-start">
   {/* <!-- Copyright --> */}
   <div className="text-center p-3" >
     Shivang Was Here
